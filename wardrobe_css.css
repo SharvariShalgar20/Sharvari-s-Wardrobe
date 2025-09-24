@@ -1,0 +1,16 @@
+.carousel-item img {
+  height: 400px; 
+  object-fit: contain;
+}
+
+.custom-padding {
+  padding: 0;
+  padding-left: 50px; 
+}
+
+.container{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+

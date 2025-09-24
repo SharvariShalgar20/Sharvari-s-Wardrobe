@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wardrobe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="wardrobe_css.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .wishlist-btn {
+            color: #ccc;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .wishlist-btn:hover,
+        .wishlist-btn.active {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        .wishlist-btn.active i {
+            font-weight: 900;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Twelfth navbar example">
+        <div class="container-fluid">
+            <!-- Back to Home Button (Added this) -->
+            <a class="navbar-brand me-2" href="bootstrap.html">
+                <i class="fas fa-arrow-left"></i> Home
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
+                aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="wardrobe.html"><strong>Tops & kurtis</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="trousers.html">Bottom
+                                wears</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="accessories.html">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Footwear.html">Footwear</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-0">
+        <div
+            class="d-flex flex-column flex-md-row align-items-center justify-content-between p-0 m-md-3 bg-body-tertiary">
+            <div class="col-md-6 text-center text-md-start custom-padding">
+                <h1 class="display-3 fw-bold">Trend Alert: Hottest Drops!</h1>
+                <h3 class="fw-normal text-muted mb-3">Up to 30% Off</h3>
+                <div class="d-flex gap-3 justify-content-center justify-content-md-start lead fw-normal">
+                    <a class="icon-link" href="#myContainer">
+                        Explore
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true" data-bs-interval="1000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/img9.png" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/img10.png" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/img11.png" class="d-block w-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="myContainer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                    <div class="p-4 bg-body-tertiary border rounded-3">
+                        <img src="images/img12.png" class="img-fluid rounded-3" style="max-width: 100%;">
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center bg-light border rounded-3 p-3">
+                                <img src="images/img13.png" class="img-fluid rounded-3"
+                                    style="width: 150px; height: 200px; object-fit: cover;" alt="Small Image 1">
+                                <div class="ms-3 w-100"> <!-- Added w-100 class here -->
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <h5>One Shoulder Cotton Top</h5>
+                                        <button class="btn btn-link p-0 wishlist-btn" data-product-id="prod1"
+                                            data-product-name="One Shoulder Cotton Top" data-product-price="999"
+                                            data-product-image="images/img13.png">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-end">
+                                        <p class="mb-0">₹999</p> <!-- Added mb-0 to remove margin-bottom -->
+                                        <a href="https://www.myntra.com/tops/marks+%26+spencer/marks--spencer-one-shoulder-cotton-top/30053430/buy"
+                                            style="color:black;">Buy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center bg-light border rounded-3 p-3">
+                                <img src="images/img14.png" class="img-fluid rounded-3"
+                                    style="width: 150px; height: 200px; object-fit: cover;" alt="Small Image 2">
+                                <div class="ms-3 w-100">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <h5 class="mb-0">One Shoulder Styled Back Top</h5>
+                                        <button class="btn btn-link p-0 wishlist-btn" data-product-id="prod2"
+                                            data-product-name="One Shoulder Styled Back Top" data-product-price="750"
+                                            data-product-image="images/img14.png">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">₹750</p>
+                                        <a href="https://www.myntra.com/tops/lulu+%26+sky/lulu--sky-one-shoulder-styled-back-top/29184004/buy"
+                                            style="color:black;">Buy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center bg-light border rounded-3 p-3">
+                                <img src="images/img15.png" class="img-fluid rounded-3"
+                                    style="width: 150px; height: 200px; object-fit: cover;" alt="Small Image 3">
+                                <div class="ms-3 w-100">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <h5 class="mb-0">Beige regular top</h5>
+                                        <button class="btn btn-link p-0 wishlist-btn" data-product-id="prod3"
+                                            data-product-name="Beige regular top" data-product-price="942"
+                                            data-product-image="images/img15.png">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">₹942</p>
+                                        <a href="https://www.myntra.com/tops/stylecast+x+revolte/stylecast-x-revolte-top/30282392/buy"
+                                            style="color:black;">Buy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center bg-light border rounded-3 p-3">
+                                <img src="images/img16.png" class="img-fluid rounded-3"
+                                    style="width: 150px; height: 200px; object-fit: cover;" alt="Small Image 4">
+                                <div class="ms-3 w-100">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <h5 class="mb-0">Choker Neck Fitted Top</h5>
+                                        <button class="btn btn-link p-0 wishlist-btn" data-product-id="prod4"
+                                            data-product-name="Choker Neck Fitted Top" data-product-price="2199"
+                                            data-product-image="images/img16.png">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">₹2199</p>
+                                        <a href="https://www.myntra.com/tops/lulu+%26+sky/lulu--sky-choker-neck-fitted-top/26560390/buy"
+                                            style="color:black;">Buy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <!-- Product 1 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-center bg-light border rounded-3 p-3">
+                            <img src="images/img18.png" class="img-fluid rounded-3"
+                                style="width: 150px; height: 200px; object-fit: cover;" alt="Small Image 1">
+                            <div class="ms-3 w-100">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="mb-0">Women Graphic Printed Round Neck Cotton Oversized T-shirt</h5>
+                                    <button class="btn btn-link p-0 wishlist-btn" data-product-id="prod5"
+                                        data-product-name="Women Graphic Printed Round Neck Cotton Oversized T-shirt"
+                                        data-product-price="1000" data-product-image="images/img18.png">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">₹1000</p>
+                                    <a href="https://www.myntra.com/tshirts/bonkers+corner/bonkers-corner-women-graphic-printed-round-neck-cotton-oversized-t-shirt/30779220/buy"
+                                        style="color:black;">Buy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="col-md-6 mb-3">
+                        <div class="d-flex align-items-center bg-light border rounded-3 p-3">
+                            <img src="images/img19.png" class="img-fluid rounded-3"
+                                style="width: 150px; height: 200px; object-fit: cover;" alt="Small Image 2">
+                            <div class="ms-3 w-100">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="mb-0">Drop-Shoulder Sleeves Oversized Loose Cotton T-shirt</h5>
+                                    <button class="btn btn-link p-0 wishlist-btn" data-product-id="prod6"
+                                        data-product-name="Drop-Shoulder Sleeves Oversized Loose Cotton T-shirt"
+                                        data-product-price="901" data-product-image="images/img19.png">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">₹901</p>
+                                    <a href="https://www.myntra.com/tshirts/bonkers+corner/bonkers-corner-drop-shoulder-sleeves-oversized-loose-cotton-t-shirt/24310102/buy"
+                                        style="color:black;">Buy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center bg-light border rounded-3 p-3">
+                            <img src="images/img20.png" class="img-fluid rounded-3"
+                                style="width: 150px; height: 200px; object-fit: cover;" alt="Small Image 3">
+                            <div class="ms-3 w-100">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="mb-0">Typography Printed Cotton Oversized T-shirt</h5>
+                                    <button class="btn btn-link p-0 wishlist-btn" data-product-id="prod7"
+                                        data-product-name="Typography Printed Cotton Oversized T-shirt"
+                                        data-product-price="799" data-product-image="images/img20.png">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">₹799</p>
+                                    <a href="https://www.myntra.com/tshirts/bonkers+corner/bonkers-corner-typography-printed-cotton-oversized-t-shirt/24314570/buy"
+                                        style="color:black;">Buy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center bg-light border rounded-3 p-3">
+                            <img src="images/img21.png" class="img-fluid rounded-3"
+                                style="width: 150px; height: 200px; object-fit: cover;" alt="Small Image 4">
+                            <div class="ms-3 w-100">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="mb-0">Varsity Printed Cotton Oversized T-shirt</h5>
+                                    <button class="btn btn-link p-0 wishlist-btn" data-product-id="prod8"
+                                        data-product-name="Varsity Printed Cotton Oversized T-shirt"
+                                        data-product-price="1295" data-product-image="images/img21.png">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">₹1295</p>
+                                    <a href="https://www.myntra.com/tshirts/bonkers+corner/bonkers-corner-varsity-printed-cotton-oversized-t-shirt/24314572/buy"
+                                        style="color:black;">Buy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <div class="p-4 bg-body-tertiary border rounded-3">
+                    <img src="images/img17.png" class="img-fluid rounded-3" style="max-width: 100%;" alt="Big Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container my-4 ">
+        <div class="row p-3 pb-0 pe-lg-0 pt-lg-4 align-items-center rounded-3 border">
+            <div class="col-lg-7 p-3">
+                <h6 class="display-5 lh-1 text-body-emphasis">"Hey girl! Your dupatta didn’t get stuck to any man's
+                    watch? Just change the outfit!"</h6>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-3">
+                    <a href="#mycontainer2"> <button type="button" class="btn btn-outline-secondary btn-lg px-4">Chcek
+                            out-></button></a>
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                <img class="img-fluid rounded-lg-3 w-100 h-auto" src="images/img22.png">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="mycontainer2">
+        <div class="row align-items-md-stretch mb-4">
+            <div class="col-md-6">
+                <div class="d-flex h-100 p-4 bg-body-tertiary">
+                    <img src="images/img23.png" class="img-fluid me-3" alt="Image" style="width: 150px; height: auto;">
+                    <div>
+                        <h5>Bandhani Embroidered Regular Sequinned Kurta With Trouser & Dupatta</h5>
+                        <p>₹1748</p>
+                        <a href="https://www.myntra.com/kurta-sets/kalini/kalini-bandhani-embroidered-regular-sequinned-kurta-with-trouser--dupatta/29726958/buy"
+                            class="btn btn-outline-secondary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex h-100 p-4 bg-body-tertiary">
+                    <img src="images/img24.png" class="img-fluid me-3" alt="Image" style="width: 150px; height: auto;">
+                    <div>
+                        <h5>Women Black Ethnic Motifs Pure Cotton Kurta with Palazzos & Dupatta</h5>
+                        <p>₹1479</p>
+                        <a href="https://www.myntra.com/kurta-sets/anayna/anayna-women-black-ethnic-motifs-pure-cotton-kurta-with-palazzos--dupatta/17351572/buy"
+                            class="btn btn-outline-secondary">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-md-stretch mb-4">
+            <div class="col-md-6">
+                <div class="d-flex h-100 p-4 bg-body-tertiary">
+                    <img src="images/img25.png" class="img-fluid me-3" alt="Image" style="width: 150px; height: auto;">
+                    <div>
+                        <h5>Ethnic Motifs Printed Shoulder Straps Zari Straight Kurta With Palazzos & Dupatta</h5>
+                        <p>₹1142</p>
+                        <a href="https://www.myntra.com/kurta-sets/fiorra/fiorra-ethnic-motifs-printed-shoulder-straps-zari-straight-kurta-with-palazzos--dupatta/25613542/buy"
+                            class="btn btn-outline-secondary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex h-100 p-4 bg-body-tertiary">
+                    <img src="images/img26.png" class="img-fluid me-3" alt="Image" style="width: 150px; height: auto;">
+                    <div>
+                        <h5>Women Regular Kurta with Trousers & With Dupatta</h5>
+                        <p>₹3736</p>
+                        <a href="https://www.myntra.com/kurta-sets/fusionic/fusionic-women-regular-kurta-with-trousers--with-dupatta/29362890/buy"
+                            class="btn btn-outline-secondary">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="wishlist.js"></script>
+    <script>
+        // Initialize wishlist buttons
+        document.addEventListener('DOMContentLoaded', function () {
+            // Attach click handlers to all wishlist buttons
+            document.querySelectorAll('.wishlist-btn').forEach(button => {
+                button.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    // Get product data from button attributes
+                    const product = {
+                        id: this.getAttribute('data-product-id'),
+                        name: this.getAttribute('data-product-name'),
+                        price: this.getAttribute('data-product-price'),
+                        image: this.getAttribute('data-product-image')
+                    };
+
+                    // Toggle heart icon
+                    const icon = this.querySelector('i');
+                    const isActive = icon.classList.contains('fas');
+
+                    if (isActive) {
+                        // Remove from wishlist
+                        icon.classList.remove('fas', 'active');
+                        icon.classList.add('far');
+                        removeFromWishlist(product.id);
+                    } else {
+                        // Add to wishlist
+                        icon.classList.remove('far');
+                        icon.classList.add('fas', 'active');
+                        addToWishlist(product);
+                    }
+                });
+            });
+
+            // Check initial wishlist state
+            checkWishlistStatus();
+        });
+
+        // These functions should match your existing wishlist.js functionality
+        function addToWishlist(product) {
+            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+            wishlist.push(product);
+            localStorage.setItem('wishlist', JSON.stringify(wishlist));
+            updateWishlistCount();
+            showToast('Added to wishlist');
+        }
+
+        function removeFromWishlist(productId) {
+            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+            wishlist = wishlist.filter(item => item.id !== productId);
+            localStorage.setItem('wishlist', JSON.stringify(wishlist));
+            updateWishlistCount();
+            showToast('Removed from wishlist');
+        }
+
+        function checkWishlistStatus() {
+            const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+            document.querySelectorAll('.wishlist-btn').forEach(button => {
+                const productId = button.getAttribute('data-product-id');
+                const icon = button.querySelector('i');
+
+                if (wishlist.some(item => item.id === productId)) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas', 'active');
+                }
+            });
+        }
+
+        function updateWishlistCount() {
+            const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+            const countElement = document.getElementById('wishlistCount');
+            if (countElement) {
+                countElement.textContent = wishlist.length;
+            }
+        }
+
+        function showToast(message) {
+            // Simple toast notification - you can enhance this
+            alert(message); // Replace with your preferred notification method
+        }
+    </script>
+</body>
+
+</html>
