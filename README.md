@@ -11,7 +11,7 @@
 
 ## Technologies Used
 
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** HTML, CSS, JavaScript,Nodejs,react native
 - **Design Approach:** Clean & minimal aesthetics, responsive layouts
 
 ## Project Structure
