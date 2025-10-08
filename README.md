@@ -8,6 +8,7 @@
 - Minimalistic and clean UI/UX design
 - Aesthetic inspiration for everyday fashion
 - Easy navigation and user-friendly interface
+- Wishlist Feature
 
 ## Technologies Used
 
